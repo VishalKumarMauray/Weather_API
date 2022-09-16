@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>Weather app</title>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="our team.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <section class="back">
+        <form id="search-form">
+            <input type="search" placeholder="Enter City Name" id="search-input" required autocomplete="off" />
+            <br>
+            <br>
+            <button id="search-button">Search</button>
+
+        </form>
+        <main id="app-container">
+            <div id="location">
+                <p>---------</p>
+            </div>
+            <div id="temp">
+                <img id="temp-icon" src="./icons/sun.svg" alt="">
+                <p><span id="temp-value">--------</span> <span id="temp-unit">&#176c</span></p>
+            </div>
+            <div id="climate">
+                <p>------------</p>
+            </div>
+
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section>
+        <div class="team-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h2>Our Team</h2>
+                            <p>Meet Our telented Team Member</p>
+                        </div>
+                    </div>
+
+                    <!--== 1st Member==-->
+                    <div class="col-md-3">
+                        <div class="single-team">
+                            <div class="team-img">
+                                <img src="./images/harshit.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-info">
+                                    <h3>Harshit Ganwgar</h3>
+
+                                </div>
+                                <p class="team-text">Front-End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--== 2nd Member==-->
+                    <div class="col-md-3">
+                        <div class="single-team">
+                            <div class="team-img">
+                                <img src="./images/sujeet.jpeg" alt="" class="img-responsive">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-info">
+                                    <h3>Sujeet Gupta</h3>
+
+                                </div>
+                                <p class="team-text">Front-End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--== 3rd Member==-->
+                    <div class="col-md-3">
+                        <div class="single-team">
+                            <div class="team-img">
+                                <img src="./images/anu.jpeg" alt="" class="img-responsive">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-info">
+                                    <h3>Anu Kumari</h3>
+
+                                </div>
+                                <p class="team-text">Front-End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--== 4th Member==-->
+                    <div class="col-md-3">
+                        <div class="single-team">
+                            <div class="team-img">
+                                <img src="./images/venom.jpeg" alt="" class="img-responsive">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-info">
+                                    <h3>Vishal kumar mauray</h3>
+
+                                </div>
+                                <p class="team-text">Back-End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+                    <hr class="bg-white">
+                    <h6 class="text-center">Please write your feedback below:</h6>
+                    <h3 class="mt-4">How do you rate your overall experience?</h3>
+
+                    <form method="post" action="connect.php">
+                        <label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+                        <label class="radio-inline"><input type="radio" name="experience" value="Average">Average</label>
+                        <label class="radio-inline"><input type="radio" name="experience" value="Good">Good</label>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4">Full Name*<br>
+                            <input type="text" id="text" required="" placeholder="Name"></label>
+
+                <label class="col-md-4">Email*<br>
+                            <input type="text" id="text" required="" placeholder="Email@gmail.com"></label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4">Age*<br>
+                            <input type="number" id="text" required="" placeholder="25"></label>
+
+                <label class="col-md-4">Phone*<br>
+                            <input type="number" id="text" required="" placeholder="+92123456789"></label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-8">Message*<br>
+                            <textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <button class="btn btn-primary" style="width: 53.5%; position: absolute; margin-left: 15%;">Submit</button>
+            </div>
+            </form>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
